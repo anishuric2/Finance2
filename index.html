@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Overview</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Stock Overview</h1>
+    <div class="search-bar">
+      <input type="text" id="stock-input" placeholder="Enter stock symbol (e.g., AAPL)">
+      <button id="search-btn">Search</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="stock-summary">
+      <div class="stock-price">
+        <h2>Current Price: <span id="current-price">$---</span></h2>
+        <p id="price-change">Change: --</p>
+      </div>
+      <div class="stock-details">
+        <ul>
+          <li>Previous Close: <span id="previous-close">--</span></li>
+          <li>Open: <span id="open-price">--</span></li>
+          <li>Day's Range: <span id="day-range">--</span></li>
+          <li>52 Week Range: <span id="week-range">--</span></li>
+          <li>Volume: <span id="volume">--</span></li>
+          <li>Market Cap: <span id="market-cap">--</span></li>
+          <li>PE Ratio (TTM): <span id="pe-ratio">--</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stock-chart">
+      <h2>Price Chart</h2>
+      <canvas id="priceChart"></canvas>
+    </section>
+
+    <section class="financials-section">
+      <h2>Financials</h2>
+      <div class="toggle-buttons">
+        <button id="annual-btn" class="active">Annual</button>
+        <button id="quarterly-btn">Quarterly</button>
+      </div>
+      <ul id="financials-list">
+        <li>Total Assets: <span id="assets">--</span></li>
+        <li>Total Liabilities: <span id="liabilities">--</span></li>
+        <li>Stockholder Equity: <span id="equity">--</span></li>
+      </ul>
+
+      <!-- New chart for financial data -->
+      <canvas id="financialChart" style="max-height:400px;"></canvas>
+    </section>
+
+
+
+    <section class="news-section">
+      <h2>Recent News</h2>
+      <ul id="news-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data sourced from Yahoo Finance | Educational Use Only</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

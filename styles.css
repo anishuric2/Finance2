@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #273c75;
+}
+
+/* Stock Summary Section */
+.stock-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stock-price {
+  flex: 1 1 250px;
+  margin-right: 30px;
+}
+
+.stock-price h2 {
+  font-size: 1.8rem;
+  color: #44bd32;
+}
+
+#price-change {
+  font-size: 1.2rem;
+  color: #e84118;
+}
+
+.stock-details {
+  flex: 2 1 400px;
+}
+
+.stock-details ul {
+  list-style-type: none;
+}
+
+.stock-details li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Chart Section */
+.stock-chart {
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stock-chart h2 {
+  margin-bottom: 10px;
+}
+
+/* News Section */
+.news-section {
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.news-section h2 {
+  margin-bottom: 15px;
+}
+
+#news-list {
+  list-style: none;
+}
+
+#news-list li {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+#news-list li a {
+  text-decoration: none;
+  color: #192a56;
+}
+
+#news-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #718093;
+}

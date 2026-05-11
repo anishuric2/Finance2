@@ -1,4 +1,4 @@
-const API_KEY = 'AYALD4G0AZSXUQE9'; // Replace with your Alpha Vantage API key
+const API_KEY = 'demo'; // Replace with your Alpha Vantage API key
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchBtn = document.getElementById('search-btn');

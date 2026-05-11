@@ -1,4 +1,4 @@
-const API_KEY = 'PE2PS8DW2PUUICW5';
+const API_KEY = '%%API_KEY%%';
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchBtn = document.getElementById('search-btn');
